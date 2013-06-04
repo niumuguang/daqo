@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="生成的文件">
+      <UniqueIdentifier>{0e384230-1c4e-416d-bcc8-476f39f6d8a0}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="daqoHandlers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xdlldata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\daqo\daqoDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\daqo\daqoView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="daqoHandlers_i.c">
+      <Filter>生成的文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xdlldata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PreviewHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ThumbnailHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\daqo\daqoDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\daqo\daqoView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="daqoHandlers_i.h">
+      <Filter>生成的文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="daqoHandlers.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="daqoHandlers.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="daqoHandlers.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="PreviewHandler.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ThumbnailHandler.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="FilterHandler.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="daqoHandlers.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

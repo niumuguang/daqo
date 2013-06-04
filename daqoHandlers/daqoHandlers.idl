@@ -1,0 +1,69 @@
+// daqoHandlers.idl : daqoHandlers的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(daqoHandlers.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(165D479B-ED14-4E9F-B9CE-867BD807605D),
+	pointer_default(unique)
+]
+interface IPreview : IUnknown
+{
+};
+
+[
+	object,
+	uuid(8BD761F6-8B03-4BC4-B4B0-42945B77C8F2),
+	pointer_default(unique)
+]
+interface IThumbnail : IUnknown
+{
+};
+
+[
+	object,
+	uuid(540E6A0F-E502-4A2C-9CF5-1DD767310AAA),
+	pointer_default(unique)
+]
+interface ISearch : IUnknown
+{
+};
+
+[
+	uuid(60B61AA3-A92C-4730-A94E-89CF5E8D03E2),
+	version(1.0),
+]
+library daqoHandlersLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(8B9AD6F3-B3CA-4732-9D68-3488E37665A2)
+	]
+	coclass Preview
+	{
+		[default] interface IPreviewHandler;
+	};
+	[
+		uuid(750AA563-BF82-44A2-964B-226D4342460F)
+	]
+	coclass Thumbnail
+	{
+		[default] interface IThumbnailProvider;
+	};
+	[
+		uuid(419A670B-5B0B-412D-9AE6-AD1BBA31B067)
+	]
+	coclass Search
+	{
+		[default] interface IFilter;
+	};
+};
+
+import "shobjidl.idl";
+import "thumbcache.idl";
+import "filter.idl";
